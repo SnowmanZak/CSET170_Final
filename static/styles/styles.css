@@ -1,0 +1,35 @@
+header p1{
+    font-size: 35px;
+    /* background-color: #819B82; */
+}
+
+.buttons button{
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+    margin-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #555651;
+}
+
+.money-text {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url('https://ids.si.edu/ids/deliveryService?id=NMAH-JN2015-5377&max=600') no-repeat center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:
+    -1px -1px 0 black,  /* Top-left shadow */
+   -1px 1px 0 black,   /* Bottom-left shadow */
+
+}
+
+

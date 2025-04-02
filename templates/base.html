@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <title>Banking</title>
+</head>
+
+<header style="text-align: left; padding: 10px;">
+    <h1 class="money-text" style="margin-bottom: 15px;">The United Bank of Money</h1>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <nav>
+            <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+                <li style="margin-right: 20px; font-size: 25px;"><a href="{{ url_for('home') }}">Home</a></li>
+
+            </ul>
+        </nav>
+
+        <div class="buttons" style="display: flex; gap: 10px;">
+            <button><a href="{{ url_for('gologin') }}">Login</a></button>
+            <button><a href="{{ url_for('signup') }}">Create Account</a></button>
+        </div>
+    </div>
+</header>
+
+
+
+<body>
+    
+</body>
+</html>

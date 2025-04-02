@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Create Account</h2>
+    <form action="/signup" method="post">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="first_name">First Name: </label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+
+        <label for="last_name">Last Name: </label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+
+        <label for="ssn">SSN: </label>
+        <input type="text" id="ssn" name="ssn" required><br><br>
+
+        <label for="address">Address: </label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="phone_num">Phone Number: </label>
+        <input type="tel" id="phone_num" name="phone_num" pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890" required><br><br>
+
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm_password">Confirm Password: </label>
+        <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
