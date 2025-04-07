@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Transfer Funds</h1>
+
+<form method="post" action="/transfer">
+    <label for="receiver_account">Receiver Account Number:</label>
+    <input type="text" id="receiver_account" name="receiver_account" maxlength="20" required><br><br>
+
+    <label for="amount">Amount to Transfer:</label>
+    <input type="number" id="amount" name="amount" step="0.01" required><br><br>
+
+    <label for="description">Description (optional):</label>
+    <input type="text" id="description" name="description"><br><br>
+
+    <input type="submit" value="Send">
+</form>
+
+{% if error %}
+    <p style="color: red;">{{ error }}</p>
+{% endif %}
+{% if success %}
+    <p style="color: green;">{{ success }}</p>
+{% endif %}
+
+{% endblock %}

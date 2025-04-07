@@ -32,4 +32,65 @@ a{
 
 }
 
+img {
+    background-size: contain;
+}
 
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 20px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: forestgreen;
+}
+
+p.error, .error {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p.success, .success {
+    color: green;
+    margin-top: 10px;
+    font-weight: bold;
+}

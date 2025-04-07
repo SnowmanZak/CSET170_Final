@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Account {% endblock %}
+
+{% block body %}
+    <h2>Your Account Information</h2>
+
+    {% if account_details %}
+        <table border="4" style="width: 100%; text-align: left; border-collapse: collapse; border-style:ridge; border-color: #89A081;" >
+            <thread>
+                <tr>
+                    <th>Username</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Account Number</th>
+                    <th>Balance</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>{{ account_details.username }}</td>
+                    <td>{{ account_details.first_name }}</td>
+                    <td>{{ account_details.last_name }}</td>
+                    <td>{{ account_details.address }}</td>
+                    <td>{{ account_details.phone }}</td>
+                    <td>{{ account_details.account_number }}</td>
+                    <td>${{ account_details.balance }}</td>
+                </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <p>No account information found. Please check your login status or try again later.</p>
+    {% endif %}        
+{% endblock %}
